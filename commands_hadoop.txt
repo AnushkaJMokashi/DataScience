@@ -1,0 +1,16 @@
+Certainly! Here are the commands you can run directly in your terminal without errors, based on the successful outcomes from the provided session:
+
+1. java -version
+2. hadoop classpath
+3. cd hadoop
+4. nano Anushka05.txt
+5. start-all.sh
+6. hdfs dfs -mkdir /Anushka05
+7. hdfs dfs -put /home/hadoop/hadoop/Anushka05.txt /Anushka05
+8. ifconfig
+9. javac -classpath "$(hadoop classpath)" -d . WC_Mapper.java WC_Reducer.java WC_Runner.java
+10. jar -cvf wordcount.jar com
+11. hadoop jar /home/hadoop/hadoop/wordcount.jar com.javatpoint.WC_Runner /Anushka05/Anushka05.txt /r_output05
+12. hdfs dfs -rm /r_output11/part-00000
+
+These commands are extracted from the session details you provided, ensuring that they reflect actions that completed without reported errors up to the point of their execution.
