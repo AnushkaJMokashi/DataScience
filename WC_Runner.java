@@ -1,4 +1,4 @@
-    package com.javatpoint;  
+    package com.wc;  
       
         import java.io.IOException;    
         import org.apache.hadoop.fs.Path;    

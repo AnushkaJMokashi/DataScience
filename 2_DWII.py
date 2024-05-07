@@ -100,56 +100,17 @@ for col in nc:
 df
 dfz = pd.read_csv('A1.csv')
 dfz
-dfz.dropna()
-# #z-score manually
-# outliers = []
-# def detect_outliers_zscore(data):
-#     thres = 3
-#     median_value = data.median()
-#     mean = np.mean(data)
-#     std = np.std(data)
-#     # print(mean, std)
-#     for i in data:
-#         z_score = (i-mean)/std
-#         if (np.abs(z_score) > thres):
-#             i = median_value
-#     return data
 
-# for feat in nc:
-#     detect_outliers_zscore(dfz[feat])
-# from scipy.stats import zscore
-# # zscores_df = dfz['Subject 1'].apply(zscore)
-# for col in nc:
-#     z_scores = df[col].apply(zscore)
-#     print(f"Skewness of {col}: {z_scores}")
 for col in nc:
     col_zscore = col + '_zscore'
     df[col_zscore] = (df[col] - df[col].mean())/df[col].std(ddof=0)
 df
 
-##OR
+
 from scipy.stats import zscore
-df_zscore = zscore(nc as array, axis=1)
-# dfz = pd.DataFrame(data)
+dfz = df.drop(columns = ['Roll No','Name'],axis=1)
+dfz.apply(zscore)
 
-# # Apply zscore to each column
-# zscores_df = dfz.apply(zscore)
-
-# # Print the DataFrame with Z-scores
-# print("DataFrame with Z-scores:")
-# print(zscores_df)
-
-# Create a new DataFrame to store Z-scores
-zscores_df = pd.DataFrame()
-
-# Calculate Z-scores for each column and add to the new DataFrame
-for column in dfz.columns:
-    zscores_df[column] = zscore(dfz[column])
-
-
-# Print the DataFrame with Z-scores
-print("DataFrame with Z-scores:")
-print(zscores_df)
 ### Skewness
 from scipy.stats import skew
 
@@ -177,3 +138,7 @@ df
 encoded_df = pd.get_dummies(df['Div'],dtype=int)
 df = pd.concat([df, encoded_df], axis=1)
 df
+
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+df['Div'] = le.fit_transform(df['Div'])

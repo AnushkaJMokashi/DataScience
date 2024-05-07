@@ -7,6 +7,7 @@ val base_df = spark.read.text("weblog.csv")
 base_df.printSchema()
 
 import spark.implicits._
+
 //this will produce a dataframe with a single column called value
 val base_df = spark.read.text("weblog.csv")
 base_df.printSchema()

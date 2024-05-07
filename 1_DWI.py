@@ -48,10 +48,7 @@ data.Duration
 ## TO find maximum
 data['Duration'].max()
 
-for i in data.Duration:
-    if i > 60 and i < 45:
-        print(i)
-        data.loc[i,'Duration']=45
+df['Duration'] = df['Duration'].apply(lambda x: 60 if x>100 else x )
 data.Duration
 # data.loc[(data['Duration'] > 60 and data['Duration'] < 45).item(), 'Duration'] = 45
 data.loc[7,'Duration'] = 45
