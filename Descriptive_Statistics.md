@@ -109,6 +109,7 @@ df['Income'].mean()
 
 
 
+
 50966.0
 
 
@@ -130,11 +131,11 @@ def mean_f(df):
 mean_f(df)
 ```
 
-    Without pandas Library -> 
-    Average of Income is 50966.0
-    
-    With pandas Library -> 
-    50966.0
+Without pandas Library -> 
+Average of Income is 50966.0 
+
+With pandas Library -> 
+50966.0
     
 
 ### Median
@@ -198,7 +199,7 @@ median_f(df)
 ```
 
 Median without library ->
-Median of Income is 49850.0 
+Median of Income is 49850.0  \
 Median with library ->
 46850.0
     
@@ -240,18 +241,16 @@ mode_f(df)
 ```
 
 Column: Age
-Without pandas Library -> 
+Without pandas Library ->  \
 Mode of Age is Old
 
-With pandas Library -> 
-0    Old
+With pandas Library ->  \
+0    Old \
 Name: Age, dtype: object
     
 
 
-```python
 
-```
 
 ### Standard Deviation
 
@@ -358,7 +357,7 @@ df['Income'].max()
 
 
 
-    93000
+93000
 
 
 
@@ -375,8 +374,8 @@ def max_f(df):
 max_f(df) 
 ```
 
-Without pandas Library-> 93000
-With pandas Library-> 93000
+    Without pandas Library-> 93000
+    With pandas Library-> 93000
     
 
 ### Percentile
@@ -497,27 +496,27 @@ def cov_f(df):
 cov_f(df)
 ```
 
-Covariance of SepalLengthCm and SepalLengthCm is : 0.6856935123042504
-Covariance of SepalLengthCm and SepalWidthCm is : -0.03926845637583892
-Covariance of SepalLengthCm and PetalLengthCm is : 1.2736823266219246
-Covariance of SepalLengthCm and PetalWidthCm is : 0.5169038031319911
+Covariance of SepalLengthCm and SepalLengthCm is : 0.6856935123042504 \
+Covariance of SepalLengthCm and SepalWidthCm is : -0.03926845637583892 \
+Covariance of SepalLengthCm and PetalLengthCm is : 1.2736823266219246 \
+Covariance of SepalLengthCm and PetalWidthCm is : 0.5169038031319911 
 
-Covariance of SepalWidthCm and SepalLengthCm is : -0.03926845637583892
-Covariance of SepalWidthCm and SepalWidthCm is : 0.1880040268456377
-Covariance of SepalWidthCm and PetalLengthCm is : -0.32171275167785235
-Covariance of SepalWidthCm and PetalWidthCm is : -0.11798120805369115
+Covariance of SepalWidthCm and SepalLengthCm is : -0.03926845637583892 \
+Covariance of SepalWidthCm and SepalWidthCm is : 0.1880040268456377 \
+Covariance of SepalWidthCm and PetalLengthCm is : -0.32171275167785235 \
+Covariance of SepalWidthCm and PetalWidthCm is : -0.11798120805369115 
 
-Covariance of PetalLengthCm and SepalLengthCm is : 1.2736823266219246
-Covariance of PetalLengthCm and SepalWidthCm is : -0.32171275167785235
-Covariance of PetalLengthCm and PetalLengthCm is : 3.113179418344519
+Covariance of PetalLengthCm and SepalLengthCm is : 1.2736823266219246 \
+Covariance of PetalLengthCm and SepalWidthCm is : -0.32171275167785235 \
+Covariance of PetalLengthCm and PetalLengthCm is : 3.113179418344519 \
 Covariance of PetalLengthCm and PetalWidthCm is : 1.2963874720357946
 
-Covariance of PetalWidthCm and SepalLengthCm is : 0.5169038031319911
-Covariance of PetalWidthCm and SepalWidthCm is : -0.11798120805369115
-Covariance of PetalWidthCm and PetalLengthCm is : 1.2963874720357946
+Covariance of PetalWidthCm and SepalLengthCm is : 0.5169038031319911 \
+Covariance of PetalWidthCm and SepalWidthCm is : -0.11798120805369115 \
+Covariance of PetalWidthCm and PetalLengthCm is : 1.2963874720357946 \
 Covariance of PetalWidthCm and PetalWidthCm is : 0.5824143176733781
-    
-    
+
+
 
 ### Correlation
 
@@ -577,26 +576,25 @@ def corr_f(df):
 corr_f(df)
 ```
 
-Correlation of SepalLengthCm and SepalLengthCm :1.0
-Correlation of SepalLengthCm and SepalWidthCm :-0.10936924995067286
-Correlation of SepalLengthCm and PetalLengthCm :0.8717541573048861
+Correlation of SepalLengthCm and SepalLengthCm :1.0 \
+Correlation of SepalLengthCm and SepalWidthCm :-0.10936924995067286 \
+Correlation of SepalLengthCm and PetalLengthCm :0.8717541573048861 \
 Correlation of SepalLengthCm and PetalWidthCm :0.8179536333691775
 
-Correlation of SepalWidthCm and SepalLengthCm :-0.10936924995067286
-Correlation of SepalWidthCm and SepalWidthCm :1.0
-Correlation of SepalWidthCm and PetalLengthCm :-0.42051609640118826
+Correlation of SepalWidthCm and SepalLengthCm :-0.10936924995067286 \
+Correlation of SepalWidthCm and SepalWidthCm :1.0 \
+Correlation of SepalWidthCm and PetalLengthCm :-0.42051609640118826 \
 Correlation of SepalWidthCm and PetalWidthCm :-0.3565440896138223
 
-Correlation of PetalLengthCm and SepalLengthCm :0.8717541573048861
-Correlation of PetalLengthCm and SepalWidthCm :-0.42051609640118826
-Correlation of PetalLengthCm and PetalLengthCm :1.0
+Correlation of PetalLengthCm and SepalLengthCm :0.8717541573048861 \
+Correlation of PetalLengthCm and SepalWidthCm :-0.42051609640118826 \
+Correlation of PetalLengthCm and PetalLengthCm :1.0 \
 Correlation of PetalLengthCm and PetalWidthCm :0.9627570970509656
 
-Correlation of PetalWidthCm and SepalLengthCm :0.8179536333691775
-Correlation of PetalWidthCm and SepalWidthCm :-0.3565440896138223
-Correlation of PetalWidthCm and PetalLengthCm :0.9627570970509656
+Correlation of PetalWidthCm and SepalLengthCm :0.8179536333691775 \
+Correlation of PetalWidthCm and SepalWidthCm :-0.3565440896138223 \
+Correlation of PetalWidthCm and PetalLengthCm :0.9627570970509656 \
 Correlation of PetalWidthCm and PetalWidthCm :1.0
     
     
-
 
