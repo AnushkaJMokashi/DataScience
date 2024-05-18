@@ -299,7 +299,7 @@ std_f(df)
 ```
 
 Without pandas library ->
-Std :  20884.6509187968
+Std :  20884.6509187968 \
 With pandas library: ->
 Std : 20884.6509187968
     
@@ -343,7 +343,7 @@ def min_f(df):
 min_f(df) 
 ```
 
-Without pandas Library-> 15000
+Without pandas Library-> 15000 \
 With pandas Library-> 15000
     
 
